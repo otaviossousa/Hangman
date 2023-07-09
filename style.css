@@ -1,0 +1,119 @@
+body {
+    font-family: 'Consolas', Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    margin: 2%;
+    color:#ffffff;
+}
+p{
+    text-align: center;
+    font-size: 200%;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    width: 135%;
+    height: 50% 50%;
+    padding: 6%;
+    border-radius: 0%;
+    
+}
+
+
+#logo{ /* logo curso ads*/
+    float: right;
+    width: 10%;    
+}
+
+#logo2{ /* logo ifpi*/
+    float: left;
+    width: 13%;
+}
+
+.flex-container-1 { /*header do html*/
+    display: flex;
+    justify-content: center;
+
+}
+
+.flex-container-2 { /* forca */
+    display: flex;
+    padding-top: 4%;
+    justify-content: center;
+}
+
+.flex-container-2-2 { /* ajuste dos espacos e letras */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.flex-container-3 { /* ajuste das letras  */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 8%;
+}
+
+h1 { /*texto "JOGO DA FORCA"*/
+    font-size: 350%;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+
+span { /* cor dos espacos e letras*/
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #ffffff;
+    width: 40px;
+    margin: 7px;
+
+    font-size: 250%;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+button { /* cor dos botoes */
+    display: flex;
+    justify-content: center;
+    margin: 0.5%;
+    width: 2.3%;
+    padding: 0.5%;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1% solid #1B3E7B;
+    border-radius: 15%;
+    font-weight: bold;
+    font-size: 200%;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover { /* estilo do ponteiro */
+    background-color: #1B3E7B;
+}
+
+button.novo-bt { /* botao jogar novamente */
+    position: absolute;
+    width: 16%;
+    height: 4% 4%;
+    padding: 1%;
+    font-size: 150%;
+    border-radius: 0%
+
+}
+
+.certa, .certa:hover { /* cor se letra certa */
+    background: #1B3E7B;
+    border: 1px solid #1B3E7B;
+    cursor: inherit;
+}
+
+.errada, .errada:hover { /* cor se letra errada */
+    background: #E50000;
+    border: 1px solid #ff0000;
+    cursor: inherit;
+}
