@@ -1,6 +1,25 @@
-let palavras = ["programador", "algoritmo", "javascript", "html", "css", "web", "frontend", "backend", "fullstack", "desenvolvimento", "aplicativo", "jogo", "site", "software"];
-
-let palavra = palavras[Math.floor(Math.random() * palavras.length)]; // selecionar palavras aleatorias
+let fComp={
+    p1: "algoritmo",
+    p2: "programador",  //Criação de objetos relacionados a fundamentos da computação
+    p3: "binario",
+    p4: "informatica"
+}
+let lProg={
+    p1: "javacript",
+    p2: "java",         //Criação de objetos relacionados a linguagem de programação
+    p3: "python",
+    p4: "php"
+}
+let web={
+    p1: "html",
+    p2: "css",          //Criação de objetos relacionados a programação web
+    p3: "frontend",
+    p4: "backend"
+}
+let palavras = [[lProg.p1,lProg.p2,lProg.p3,lProg.p4],[fComp.p1,fComp.p2,fComp.p3,fComp.p4],[web.p1,web.p2,web.p3,web.p4]] //Adiciona todas as palavras em uma matriz
+let indice1=Math.floor(Math.random()*3); // Escolhe um número aleatório para o indice 1 da matriz
+let indice2=Math.floor(Math.random()*4) // Escolhe um númeoro aleatório para o indice 2 da matriz
+let palavra=palavras[indice1][indice2] //Retorna uma palavra aleatória
 
 let tentativas = 6; // quantidade de tentativas
 let acertos = 0; //  quantidade de acertos 
@@ -98,3 +117,37 @@ function escolheLetra(letra) {
     }
 
 } 
+let btDica = document.getElementById("btDica"); //Variável recebe atritutos do botão dica do HTML
+let divDica = document.getElementById("dica"); // Varável recebe atributos da div dica no HTML
+let mensagemDica=" ";
+let botaoAcionado = false // Variável auxiliar para o loop ser realizado apenas uma vez
+
+btDica.addEventListener('click',function Dica(){  //Teste da palavra em cada array para retornar a mensagem de dica
+    if(!botaoAcionado){
+        for(let v=0;v<=2;v++){
+            if(v==0){
+                for(let z=0; z < 4; z++){ 
+                    if(palavra == palavras[0][z]){
+                        mensagemDica = document.createTextNode("Fundamentos da Computação") // Retorna a meensagem da dica 
+                        divDica.appendChild(mensagemDica)
+                    }
+                }
+            }else if(v==1){  
+                for(let z=0; z < 4; z++){
+                    if(palavra == palavras[1][z]){
+                        mensagemDica = document.createTextNode("Linguagem de Programação") // Retorna a dica a mensagem da dica
+                        divDica.appendChild(mensagemDica)
+                    }
+                }
+            }else{  
+                for(let z=0; z < 4; z++){
+                    if(palavra == palavras[2][z]){
+                        mensagemDica = document.createTextNode("Progamação WEB") // Retorna a dica a mensagem da dica
+                        divDica.appendChild(mensagemDica)
+                    }
+                }
+            }
+        }
+        botaoAcionado = true //botao acionado apenas uma vez
+    }   
+})
