@@ -117,3 +117,14 @@ button.novo-bt { /* botao jogar novamente */
     border: 1px solid #ff0000;
     cursor: inherit;
 }
+.div-dica { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.botaoDica{
+    width: 100px;
+    height: auto;
+}
