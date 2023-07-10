@@ -127,14 +127,14 @@ btDica.addEventListener('click',function Dica(){  //Teste da palavra em cada arr
         for(let v=0;v<=2;v++){
             if(v==0){
                 for(let z=0; z < 4; z++){ 
-                    if(palavra == palavras[0][z]){
+                    if(palavra == palavras[1][z]){
                         mensagemDica = document.createTextNode("Fundamentos da Computação") // Retorna a meensagem da dica 
                         divDica.appendChild(mensagemDica)
                     }
                 }
             }else if(v==1){  
                 for(let z=0; z < 4; z++){
-                    if(palavra == palavras[1][z]){
+                    if(palavra == palavras[0][z]){
                         mensagemDica = document.createTextNode("Linguagem de Programação") // Retorna a dica a mensagem da dica
                         divDica.appendChild(mensagemDica)
                     }
