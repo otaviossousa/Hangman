@@ -36,7 +36,7 @@ p{
 
 .flex-container-2 { /* forca */
     display: flex;
-    padding-top: 4%;
+    padding-top: 3%;
     justify-content: center;
 }
 
@@ -53,11 +53,11 @@ p{
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 8%;
+    padding-top: 3%;
 }
 
 h1 { /*texto "JOGO DA FORCA"*/
-    font-size: 350%;
+    font-size: 250%; 
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
@@ -80,8 +80,8 @@ button { /* cor dos botoes */
     display: flex;
     justify-content: center;
     margin: 0.5%;
-    width: 2.3%;
-    padding: 0.5%;
+    width: 2.5%;
+    padding: 0.4%;
     background-color: #ffffff;
     color: #000000;
     border: 1% solid #1B3E7B;
@@ -124,7 +124,31 @@ button.novo-bt { /* botao jogar novamente */
     justify-content: center;
     padding-top: 20px;
 }
+.botaoDica:hover{
+    background-color: rgb(250, 207, 155);
+}
 .botaoDica{
-    width: 100px;
+    width: 7%;
     height: auto;
+    border-radius: 11%;
+    cursor: pointer;
+}
+.final{
+    display: flex;
+    justify-content: center;
+
+}
+.div-final{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    width: 450px;
+}
+.botaoEnviar{
+    width: 30%;
+    font-size: 150%;
+}
+.minus{
+    text-transform: lowercase;
 }
