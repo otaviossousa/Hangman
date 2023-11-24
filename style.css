@@ -36,7 +36,7 @@ p{
 
 .flex-container-2 { /* forca */
     display: flex;
-    padding-top: 4%;
+    padding-top: 3%;
     justify-content: center;
 }
 
@@ -81,7 +81,7 @@ button { /* cor dos botoes */
     justify-content: center;
     margin: 0.5%;
     width: 2.3%;
-    padding: 0.5%;
+    padding: 0.4%;
     background-color: #ffffff;
     color: #000000;
     border: 1% solid #1B3E7B;
@@ -124,7 +124,12 @@ button.novo-bt { /* botao jogar novamente */
     justify-content: center;
     padding-top: 20px;
 }
+.botaoDica:hover{
+    background-color: rgb(250, 207, 155);
+}
 .botaoDica{
-    width: 100px;
+    width: 7%;
     height: auto;
+    border-radius: 11%;
+    cursor: pointer;
 }

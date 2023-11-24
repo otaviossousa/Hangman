@@ -20,7 +20,7 @@ let palavras = [[lProg.p1,lProg.p2,lProg.p3,lProg.p4],[fComp.p1,fComp.p2,fComp.p
 let indice1=Math.floor(Math.random()*3); // Escolhe um número aleatório para o indice 1 da matriz
 let indice2=Math.floor(Math.random()*4) // Escolhe um númeoro aleatório para o indice 2 da matriz
 let palavra=palavras[indice1][indice2] //Retorna uma palavra aleatória
-
+console.log(palavra)
 let tentativas = 6; // quantidade de tentativas
 let acertos = 0; //  quantidade de acertos 
 let imagem = 0; // variavel para carregar cada imagem da forca
