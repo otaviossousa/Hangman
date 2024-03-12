@@ -4,4 +4,4 @@
 
 ### Link
 
-  https://otavio-sousa.github.io/Hangman/
+  https://otaviossousa.github.io/Hangman/
